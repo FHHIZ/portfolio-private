@@ -433,6 +433,10 @@ footer .column > a:hover{
         display: none;
     }
 
+    .tlogo {
+        max-width: 50px;
+    }
+
     #theme-toggle2{
         display: flex;
     }
