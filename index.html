@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-logo">
+            <a href="#">
+                <!-- <img src="images/logo.png"> -->
+                <p class="tlogo">ハフィズ</p>
+            </a>
+        </div>
+
+        <ul class="nav-links">
+            <li class="link"><a href="#">Home</a></li>
+            <li id="link1" class="link"><a href="#">Skills</a></li>
+            <li id="link2" class="link"><a href="#">Projects</a></li>
+            <li id="link3" class="link"><a href="#">About</a></li>
+            <li id="theme-toggle" class="link"><a href="#">
+                <p class="light"><i class="ri-sun-line"></i> Light Theme</p>
+                <p class="dark"><i class="ri-moon-line"></i> Dark Theme</p></a>
+            </li>
+        </ul>
+        <li id="theme-toggle2" class="link"><a href="#">
+            <p class="light"><i class="ri-sun-line"></i></p>
+            <p class="dark"><i class="ri-moon-line"></i></p></a>
+        </li>
+        <button class="btn"><a href="https://wa.me/+62895609943040" style="color: white;">Contact Me</a></button>
+    </nav>
+
+    <header class="container">
+        <div class="content">
+            <span class="blur"></span>
+            <span class="blur"></span>
+            <h4>- Hafizh Ahmad Raissan -</h4>
+            <H1>Hi, I'm <span>Hafizh</span>, Web Developer</H1>
+            <p>
+                a Student at SMKN 4 Bandung. Majoring in Software Engineering, I am interested in Game Development and Web Development
+            </p>
+            <button id="link4" class="btn">Get Started</button>
+        </div>
+        <div class="image">
+            <img class="himg" src="images/header.png" draggable="false">
+        </div>
+    </header>
+    
+    <div id="page-content">
+        <section class="container"  id="page-content">
+            <h2 class="header">MY SKILLS</h2>
+            <div class="skills">
+                <div class="card">
+                    <span><i class="ri-pages-line"></i></span>
+                    <h4>Website Development</h4>
+                    <p>
+                        I can make a website frontend using HTML, CSS, and Javascript. I can also use Bootstrap.
+                    </p>
+                    <label for="modal-toggle-1" class="see-all">See All <i class="ri-arrow-right-line"></i></label>
+                </div>
+                <div class="card">
+                    <span><i class="ri-android-line"></i></span>
+                    <h4>Android Mobile Frontend</h4>
+                    <p>
+                        I can make a simple android mobile frontend using Android Studio.
+                    </p>
+                    <label for="modal-toggle-2" class="see-all">See All <i class="ri-arrow-right-line"></i></label>
+                </div>
+                <div class="card">
+                    <span><i class="ri-gamepad-line"></i></span>
+                    <h4>Game Developer</h4>
+                    <p>
+                        I can make a simple game using Unity and Roblox Studio. I can also make a game using Godot.
+                    </p>
+                    <label for="modal-toggle-3" class="see-all">See All <i class="ri-arrow-right-line"></i></label>
+                </div>
+                <div class="card">
+                    <span><i class="ri-box-3-line"></i></span>
+                    <h4>3D Modelling</h4>
+                    <p>
+                        I can make a simple 3D model using Blender. I have experience in creating various 3D assets
+                    </p>
+                    <label for="modal-toggle-4" class="see-all">See All <i class="ri-arrow-right-line"></i></label>
+                </div>
+            </div>
+        </section>    
+    </div>
+    
+    <input type="checkbox" id="modal-toggle-1" class="modal-toggle">
+    <div class="modal">
+        <div class="modal-content">
+            <label for="modal-toggle-1" class="close">&times;</label>
+            <h2>Website Development Details</h2>
+            <br>
+    
+            <!-- HTML Section -->
+            <div class="skill-section">
+                <h4>HTML</h4>
+                <div class="skill-details">
+                    <div class="pop-up-left">
+                        <p class="popicon"><i class="ri-html5-fill"></i></p>
+                    </div>
+                    <div class="pop-up-right">
+                        <p><strong>Skill Level:</strong> Intermediate</p>
+                        <p>HTML is the backbone of web development. I use it to structure content and create semantic, accessible websites.</p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- CSS Section -->
+            <div class="skill-section">
+                <h4>CSS</h4>
+                <div class="skill-details">
+                    <div class="pop-up-left">
+                        <p class="popicon"><i class="ri-css3-fill"></i></p>
+                    </div>
+                    <div class="pop-up-right">
+                        <p><strong>Skill Level:</strong> Intermediate</p>
+                        <p>CSS is used to style and layout web pages. I leverage modern CSS features like Flexbox and Grid for responsive designs.</p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- JavaScript Section -->
+            <div class="skill-section">
+                <h4>JavaScript</h4>
+                <div class="skill-details">
+                    <div class="pop-up-left">
+                        <p class="popicon"><i class="ri-javascript-fill"></i></p>
+                    </div>
+                    <div class="pop-up-right">
+                        <p><strong>Skill Level:</strong> Beginner</p>
+                        <p>JavaScript adds interactivity to websites. I use it for DOM manipulation and basic functionality.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PHP Section -->
+            <div class="skill-section">
+                <h4>PHP</h4>
+                <div class="skill-details">
+                    <div class="pop-up-left">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg" draggable="false" style="width:8rem; height:auto;">
+                    </div>
+                    <div class="pop-up-right">
+                        <p><strong>Skill Level:</strong> Beginner</p>
+                        <p>PHP is a server-side language used for backend development. I use it to handle form submissions, interact with databases, and create dynamic web pages.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MYSQL Section -->
+            <div class="skill-section">
+                <h4>PHP</h4>
+                <div class="skill-details">
+                    <div class="pop-up-left">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/dd/MySQL_logo.svg/150px-MySQL_logo.svg.png" draggable="false" style="width:8rem; height:auto; pointer-events: none;">
+                    </div>
+                    <div class="pop-up-right">
+                        <p><strong>Skill Level:</strong> Beginner</p>
+                        <p>MySQL is a relational database management system used to store and manage data efficiently. I have basic experience in designing databases, writing SQL queries for CRUD (Create, Read, Update, Delete) operations, and managing database relationships.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <input type="checkbox" id="modal-toggle-2" class="modal-toggle">
+    <div class="modal">
+        <div class="modal-content">
+            <label for="modal-toggle-2" class="close">&times;</label>
+            <h2>Android Mobile Frontend Details</h2>
+            <br>
+    
+            <!-- Java Section -->
+            <div class="skill-section">
+                <h4>Java</h4>
+                <div class="skill-details">
+                    <div class="pop-up-left">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/800px-Java_programming_language_logo.svg.png" draggable="false" style="width: 3rem; height: auto; margin-left: 2.5rem; margin-right: 2.5rem;">
+                    </div>
+                    <div class="pop-up-right">
+                        <p><strong>Skill Level:</strong> Beginner</p>
+                        <p>Java is a versatile programming language. I have basic knowledge of Java for object-oriented programming and backend development.</p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Kotlin Section -->
+            <div class="skill-section">
+                <h4>Kotlin</h4>
+                <div class="skill-details">
+                    <div class="pop-up-left">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Kotlin_logo_2021.svg/1920px-Kotlin_logo_2021.svg.png" draggable="false" style="width: 8rem; height: auto;">
+                    </div>
+                    <div class="pop-up-right">
+                        <p><strong>Skill Level:</strong> Beginner</p>
+                        <p>Kotlin is mainly used for Android development. I have a basic understanding of Kotlin for building simple mobile applications.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <input type="checkbox" id="modal-toggle-3" class="modal-toggle">
+        <div class="modal">
+            <div class="modal-content">
+                <label for="modal-toggle-3" class="close">&times;</label>
+                <h2>Game Developer Details</h2>
+                <br>
+        
+                <!-- Unity Section -->
+                <div class="skill-section">
+                    <h4>Unity</h4>
+                    <div class="skill-details">
+                        <div class="pop-up-left">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Unity_2021.svg/1920px-Unity_2021.svg.png" draggable="false" style="width: 3rem; height: auto; margin-left: 2.5rem; margin-right: 2.5rem;">
+                        </div>
+                        <div class="pop-up-right">
+                            <p><strong>Skill Level:</strong> Beginner</p>
+                            <p>Unity is a powerful game engine used for creating 2D and 3D games. I have basic knowledge of Unity for game development, including using C# for scripting and handling game objects.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <input type="checkbox" id="modal-toggle-4" class="modal-toggle">
+        <div class="modal">
+            <div class="modal-content">
+                <label for="modal-toggle-4" class="close">&times;</label>
+                <h2>3D Modelling Details</h2>
+                <br>
+        
+                <!-- Blender Section -->
+                <div class="skill-section">
+                    <h4>Blender</h4>
+                    <div class="skill-details">
+                        <div class="pop-up-left">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Logo_Blender.svg/1920px-Logo_Blender.svg.png" draggable="false" style="width: 3rem; height: auto; margin-left: 2.5rem; margin-right: 2.5rem;">
+                        </div>
+                        <div class="pop-up-right">
+                            <p><strong>Skill Level:</strong> Beginner</p>
+                            <p>Blender is an open-source 3D modeling and animation software. I have basic experience in creating 3D models, applying textures, and rendering scenes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="container">
+        <h2 class="header">PROJECTS</h2>
+        <p class="sub-header">
+            My Project Showcase
+        </p>
+        <div class="projects">
+            <div class="card">
+                <div class="content">
+                    <h4>Digitalent</h4>
+                    <h3>Data Analytics</h3>
+                    <img src="https://majapahit.id/portofolio/2022-03/202203141442_Thumbnail.png" style="max-height: 200px; max-width: 300px; border-radius: 25px;" draggable="false">
+                    <br>
+                    <li>Data manipulation with Pandas</li>
+                    <li>Building Supervised Learning Models</li>
+                    <li>Model Performance Improvement Techniques</li>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <h4>JagooIT</h4>
+                    <h3>Teaching Factory</h3>
+                    <img src="images/jagooit.jpg" style="height: 200px; max-width: 300px; border-radius: 25px;" draggable="false">
+                    <br>
+                    <li>Working as a Frontend Developer in Performance Management</li>
+                    <li>Designing UI/UX</li>
+                    <li>Creating the Frontend View in Laravel</li>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="container">
+        <span class="blur"></span>
+        <span class="blur"></span>
+        <div class="column">
+            <div class="logo">
+                <img src="images/hafizh.jpg" style="border-radius: 40%;">
+            </div>
+            <p style="max-width: 300px;">
+                - Drives my passion every day. -
+            </p>
+            <div class="socials">
+                <a href="https://wa.me/+62895609943040"><i class="ri-whatsapp-line"></i></a>
+                <a href="https://www.instagram.com/hafizhahmri?igsh=dWtncjRvMGY1ZXNo"><i class="ri-instagram-line"></i></a>
+                <a href="https://www.linkedin.com/in/hafizhahmadraissan"><i class="ri-linkedin-box-line"></i></a>
+            </div>
+        </div>
+        <div class="column">
+            <!-- <h4>Company</h4>
+            <a href="#">Business</a>
+            <a href="#">Partnership</a>
+            <a href="#">Network</a> -->
+        </div>
+        <!-- <div class="column">
+            <h4>About Us</h4>
+            <a href="#">Blogs</a>
+            <a href="#">Channels</a>
+            <a href="#">Sponsors</a>
+        </div> -->
+        <!-- <div class="column">
+            <h4>Contact</h4>
+            <a href="#">Contact Us</a>
+            <a href="#">Privicy Policy</a>
+            <a href="#">Terms & Conditions</a>
+        </div> -->
+    </footer>
+
+    <!-- <div class="copyright">
+        Copyright © 2025 Hafizh Ahmad Raissan. All Rights Reserved.
+    </div> -->
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</body>
+
+</html>
